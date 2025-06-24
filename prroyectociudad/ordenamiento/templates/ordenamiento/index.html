@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Proyecto Ciudad</title>
+</head>
+<body>
+    <h1>Proyecto Ciudad</h1>
+    <nav>
+        <a href="{% url 'listar_parroquias' %}">Listar Parroquias y Barrios</a> |
+        <a href="{% url 'listar_barrios' %}">Listar Barrios</a> |
+        <a href="{% url 'crear_parroquia' %}">Crear Parroquia</a> |
+        <a href="{% url 'crear_barrio' %}">Crear Barrio</a>
+    </nav>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>

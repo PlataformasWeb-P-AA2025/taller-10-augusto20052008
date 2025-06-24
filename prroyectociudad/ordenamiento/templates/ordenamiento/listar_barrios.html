@@ -1,0 +1,19 @@
+<h2>Listado de Barrios</h2>
+<table border="1">
+    <tr>
+        <th>Nombre</th>
+        <th>Parroquia</th>
+        <th>Viviendas</th>
+        <th>Parques</th>
+        <th>Edificios</th>
+    </tr>
+    {% for barrio in barrios %}
+    <tr>
+        <td>{{ barrio.nombre }}</td>
+        <td>{{ barrio.parroquia.nombre }}</td>
+        <td>{{ barrio.numero_viviendas }}</td>
+        <td>{{ barrio.numero_parques }}</td>
+        <td>{{ barrio.numero_edificios }}</td>
+    </tr>
+    {% endfor %}
+</table>
